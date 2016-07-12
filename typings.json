@@ -1,0 +1,11 @@
+{
+  "name": "calc",
+  "dependencies": {
+    "lodash": "registry:npm/lodash#4.0.0+20160701205107"
+  },
+  "globalDependencies": {
+    "electron": "registry:env/electron#0.37.6+20160416165306",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
+    "node": "registry:env/node#6.0.0+20160622202520"
+  }
+}

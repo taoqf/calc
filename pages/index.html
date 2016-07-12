@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>带宽分配计算</title>
+	<style type="text/css">
+		.danger{
+			color: red;
+		}
+		html,body{margin: 0;padding: 0;font-size: 12px; text-align: center; color: #333333;}
+		body{padding-top: 40px;}
+		ul,li{list-style: none;margin: 0;padding: 0;}
+		h2{text-align: center;}
+		.container{width:640px;margin:0 auto; text-align: left;}
+		.content{border:1px solid #e6e6e6;padding: 20px;overflow: hidden;}
+		.content ul{margin-left: 30px; overflow: hidden;}
+		.content ul li{float: left;width:240px; margin-left: 20px; margin-top:10px;margin-bottom: 10px;}
+		.content ul li input{height: 26px; line-height:26px;border:1px solid #e6e6e6; text-indent: 4px;}
+		.table{width:494px; margin-left: 50px;border-collapse:collapse; margin-top: 20px;}
+		.table,.table td{border:1px solid #e6e6e6;}
+		.table td{height:30px; line-height: 30px; text-indent: 6px;}
+		.table td.last {color:#75BEF3;text-align:right; padding-right:10px;}
+		.table tr.title{text-align: center; background: #F0F0F0; color: #666666;}
+		.total{margin-left: 50px;width:494px; margin-top: 10px;}
+		.total p{float:left; margin-right: 40px;}
+		.total p span{color: #666666;}
+		a{color:#75BEF3; text-decoration: none;}
+		a:hover{color:red; text-decoration: underline;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>宽带分配计算</h2>
+		<div class="content">
+		<ul>
+			<li><span>上行总量(m):</span><input id="totalup" type="number"/></li>
+			<li><span>下行总量(m):</span><input id="totaldown" type="number"/></li>
+			<li><span>上行预留(%):</span><input id="warnup" type="number"/></li>
+			<li><span>下行预留(%):</span><input id="warndown" type="number"/></li>
+		</ul>
+		<table class="table">
+			<thead class="title">
+				<th>用户</th>
+				<th>上行</th>
+				<th>下行</th>
+			</thead>
+			<tbody id="used">
+			</tbody>
+		</table>
+		<div class="total">
+			<p><span>上行当前可分配：</span><strong id="restup">800</strong></p>
+			<p><span>上行当前可分配：</span><strong id="restdown">800</strong></p>
+		</div>
+		</div>
+	</div>
+	<script>require('../dist/index')</script>
+</body>
+</html>
