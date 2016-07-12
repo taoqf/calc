@@ -1,24 +1,25 @@
 {
-	"name": "calc",
-	"version": "1.0.0",
-	"description": "",
-	"main": "./dist/main.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"readme": "README.md",
-	"author": "taoqf <tao_qiufeng@126.com>",
-	"license": "MIT",
-	"devDependencies": {
-		"del": "^2.2.0",
-		"gulp": "^3.9.1",
-		"gulp-copy": "^0.0.2",
-		"gulp-sequence": "^0.4.5",
-		"gulp-tslint": "^5.0.0",
-		"gulp-typescript": "^2.13.6",
-		"tslint": "^3.11.0"
-	},
-	"dependencies": {
-		"jquery": "^3.0.0"
-	}
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "readme": "README.md",
+  "author": "taoqf <tao_qiufeng@126.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "electron-prebuilt": "^1.2.5",
+    "gulp": "^3.9.1",
+    "gulp-copy": "^0.0.2",
+    "gulp-sequence": "^0.4.5",
+    "gulp-tslint": "^5.0.0",
+    "gulp-typescript": "^2.13.6",
+    "tslint": "^3.11.0"
+  },
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
 }
